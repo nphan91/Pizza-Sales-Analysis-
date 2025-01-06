@@ -11,3 +11,42 @@ This project focuses on analyzing pizza sales data using SQL and Power BI to unc
 5. Compute the average number of pizzas sold per order by dividing the total pizzas sold by the total number of orders.  
 
 ## This analysis serves as a foundation for identifying sales trends, understanding customer preferences, and driving business strategies.  
+
+SQL Queries
+View Pizza Sales Data
+sql
+Copy code
+SELECT *  
+FROM [dbo].[pizza_sales];
+Total Revenue
+sql
+Copy code
+SELECT SUM([total_price]) AS 'Total_Revenue'  
+FROM pizza_sales;
+Average Order Value (AOV)
+sql
+Copy code
+SELECT SUM([total_price]) / COUNT(DISTINCT([order_id])) AS 'Average_Order_Value'  
+FROM pizza_sales;
+Total Pizzas Sold
+sql
+Copy code
+ALTER TABLE [dbo].[pizza_sales]  
+ALTER COLUMN [quantity] INT;  
+
+SELECT SUM([quantity]) AS 'Total_Pizzas_Sold'  
+FROM [dbo].[pizza_sales];
+Total Orders
+sql
+Copy code
+SELECT COUNT(DISTINCT([order_id])) AS 'Total_Orders'  
+FROM pizza_sales;
+Average Pizzas per Order
+sql
+Copy code
+SELECT 
+    CAST(
+        CAST(SUM([quantity]) AS DECIMAL(10, 2)) / 
+        CAST(COUNT(DISTINCT [order_id]) AS DECIMAL(10, 2)) 
+    AS DECIMAL(10, 2)) AS 'Average_Pizzas_per_Order'  
+FROM pizza_sales;
