@@ -10,9 +10,9 @@ This project focuses on analyzing pizza sales data using SQL and Power BI to unc
 4. Analyze the total number of unique orders placed.  
 5. Compute the average number of pizzas sold per order by dividing the total pizzas sold by the total number of orders.
 
-### Data Link: 
-
 ## This analysis serves as a foundation for identifying sales trends, understanding customer preferences, and driving business strategies.  
+
+### Data Link: https://github.com/nphan91/Pizza-Sales-Analysis-using-SQL-and-Power-BI/blob/main/pizza_sales.csv
 
 ### SQL Queries
 ## View Pizza Sales Data
