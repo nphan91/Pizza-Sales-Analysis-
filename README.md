@@ -13,6 +13,7 @@ This project focuses on analyzing pizza sales data using SQL and Power BI to unc
 ## This analysis serves as a foundation for identifying sales trends, understanding customer preferences, and driving business strategies.  
 
 ### Data Link: https://github.com/nphan91/Pizza-Sales-Analysis-using-SQL-and-Power-BI/blob/main/pizza_sales.csv
+### Pizza Sales Dashboard: Pizza Sales Dashboard.pbix
 
 ### SQL Queries
 ## View Pizza Sales Data
